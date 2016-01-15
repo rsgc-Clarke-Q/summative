@@ -1,3 +1,5 @@
+float clicks = 1;
+
 void setup() {
   size (800, 800);
   background(255);
@@ -7,8 +9,9 @@ void setup() {
   textSize(25);
   text("2 D Truth or dare Jenga", 75, 100);
   textSize(15);
-  text("Press and hold H to see the instructions", 50, 150);
+
   //text("", , );
+
 
   fill(110);
 
@@ -107,6 +110,20 @@ void setup() {
 
 void draw()
 {
+  noStroke();
+  fill(255);
+  rect(725, 0, 75, 75);
+
+  fill(255);
+  text(clicks + "clicks", 725, 25);
+
+  if (clicks > random(20, 50))
+  {
+    rect(0, 0, 800, 800);
+    textSize(100);
+    fill(0);
+    text("Game over", 250, 300);
+  }
 }
 
 
@@ -115,23 +132,27 @@ void mouseClicked() {
     fill(255);
     noStroke();
     rect(175, 200, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 275 && mouseX < 325 && mouseY > 650 && mouseY < 675) {
     fill(255);
     noStroke();
     rect(275, 650, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 625 && mouseY < 650) {
     fill(255);
     noStroke();
     rect(275, 625, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 275 && mouseX < 325 && mouseY > 475 && mouseY < 500) {
     fill(255);
     noStroke();
     rect(275, 475, 50, 25);
+    clicks = clicks + 1;
   }
 
 
@@ -139,18 +160,21 @@ void mouseClicked() {
     fill(255);
     noStroke();
     rect(275, 400, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 225 && mouseX < 275 && mouseY > 375 && mouseY < 400) {
     fill(255);
     noStroke();
     rect(225, 375, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 225 && mouseX < 275 && mouseY > 300 && mouseY < 325) {
     fill(255);
     noStroke();
     rect(225, 300, 50, 25);
+    clicks = clicks + 1;
   }
 
 
@@ -158,6 +182,7 @@ void mouseClicked() {
     fill(255);
     noStroke();
     rect(225, 250, 50, 25);
+    clicks = clicks + 1;
   }
 
 
@@ -165,256 +190,306 @@ void mouseClicked() {
     fill(255);
     noStroke();
     rect(225, 225, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 175 && mouseX < 225 && mouseY > 650 && mouseY < 675) {
     fill(255);
     noStroke();
     rect(175, 650, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 175 && mouseX < 225 && mouseY > 625 && mouseY < 650) {
     fill(255);
     noStroke();
     rect(175, 625, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 275 && mouseX < 325 && mouseY > 300 && mouseY < 325) {
     fill(255);
     noStroke();
     rect(275, 300, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 275 && mouseX < 325 && mouseY > 600 && mouseY < 625) {
     fill(255);
     noStroke();
     rect(275, 600, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 350 && mouseY < 375) {
     fill(255);
     noStroke();
     rect(175, 350, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 600 && mouseY < 625) {
     fill(255);
     noStroke();
     rect(175, 600, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 175 && mouseX < 225 && mouseY > 575 && mouseY < 600) {
     fill(255);
     noStroke();
     rect(175, 575, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 550 && mouseY < 575) {
     fill(255);
     noStroke();
     rect(175, 550, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 275 && mouseY < 300) {
     fill(255);
     noStroke();
     rect(175, 275, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 450 && mouseY < 475) {
     fill(255);
     noStroke();
     rect(175, 450, 50, 25);
+    clicks = clicks + 1;
   }
 
   if (mouseX > 225 && mouseX < 275 && mouseY > 350 && mouseY < 375) {
     fill(255);
     noStroke();
     rect(225, 350, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 325 && mouseY < 350) {
     fill(255);
     noStroke();
     rect(225, 325, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 550 && mouseY < 575) {
     fill(255);
     noStroke();
     rect(225, 550, 50, 25);
+    clicks = clicks + 1;
   }
-  if (mouseX > 225 && mouseX < 275 && mouseY > 550 && mouseY < 575) {
+  if (mouseX > 225 && mouseX < 275 && mouseY > 425 && mouseY < 450) {
     fill(255);
     noStroke();
     rect(225, 425, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 400 && mouseY < 425) {
     fill(255);
     noStroke();
     rect(225, 400, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 575 && mouseY < 600) {
     fill(255);
     noStroke();
     rect(225, 575, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 550 && mouseY < 575) {
     fill(255);
     noStroke();
     rect(275, 550, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 525 && mouseY < 550) {
     fill(255);
     noStroke();
     rect(275, 525, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 350 && mouseY < 375) {
     fill(255);
     noStroke();
     rect(275, 350, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 325 && mouseY < 350) {
     fill(255);
     noStroke();
     rect(275, 325, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 450 && mouseY < 475) {
     fill(255);
     noStroke();
     rect(275, 450, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 425 && mouseY < 450) {
     fill(255);
     noStroke();
     rect(275, 425, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 600 && mouseY < 625) {
     fill(255);
     noStroke();
     rect(225, 600, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 400 && mouseY < 425) {
     fill(255);
     noStroke();
     rect(175, 400, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 325 && mouseY < 350) {
     fill(255);
     noStroke();
     rect(175, 325, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 450 && mouseY < 475) {
     fill(255);
     noStroke();
     rect(225, 450, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 425 && mouseY < 450) {
     fill(255);
     noStroke();
     rect(175, 425, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 250 && mouseY < 275) {
     fill(255);
     noStroke();
     rect(175, 250, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 275 && mouseY < 300) {
     fill(255);
     noStroke();
     rect(275, 275, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 500 && mouseY < 525) {
     fill(255);
     noStroke();
     rect(275, 500, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 375 && mouseY < 400) {
     fill(255);
     noStroke();
     rect(275, 375, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 575 && mouseY < 600) {
     fill(255);
     noStroke();
     rect(275, 575, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 225 && mouseY < 250) {
     fill(255);
     noStroke();
     rect(275, 225, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 250 && mouseY < 275) {
     fill(255);
     noStroke();
     rect(275, 250, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 525 && mouseY < 550) {
     fill(255);
     noStroke();
     rect(225, 525, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 500 && mouseY < 525) {
     fill(255);
     noStroke();
     rect(225, 500, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 275 && mouseY < 300) {
     fill(255);
     noStroke();
     rect(225, 275, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 200 && mouseY < 225) {
     fill(255);
     noStroke();
     rect(225, 200, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 650 && mouseY < 675) {
     fill(255);
     noStroke();
     rect(225, 650, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 625 && mouseY < 650) {
     fill(255);
     noStroke();
     rect(225, 625, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 475 && mouseY < 500) {
     fill(255);
     noStroke();
     rect(225, 475, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 375 && mouseY < 400) {
     fill(255);
     noStroke();
     rect(175, 375, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 225 && mouseX < 275 && mouseY > 475 && mouseY < 500) {
     fill(255);
     noStroke();
     rect(225, 475, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 225 && mouseY < 250) {
     fill(255);
     noStroke();
     rect(175, 225, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 525 && mouseY < 550) {
     fill(255);
     noStroke();
     rect(175, 525, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 300 && mouseY < 325) {
     fill(255);
     noStroke();
     rect(175, 300, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 500 && mouseY < 525) {
     fill(255);
     noStroke();
     rect(175, 500, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 175 && mouseX < 225 && mouseY > 475 && mouseY < 500) {
     fill(255);
     noStroke();
     rect(175, 475, 50, 25);
+    clicks = clicks + 1;
   }
   if (mouseX > 275 && mouseX < 325 && mouseY > 200 && mouseY < 225) {
     fill(255);
     noStroke();
     rect(275, 200, 50, 25);
+    clicks = clicks + 1;
   }
 }
