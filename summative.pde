@@ -1,4 +1,4 @@
-float clicks = 1;
+float clicks = 1; // tracks the number of clicks
 
 void setup() {
   size (800, 800);
@@ -13,10 +13,10 @@ void setup() {
   //text("", , );
 
 
-  fill(110);
+  fill(110); 
 
 
-  rect(175, 200, 50, 25); //
+  rect(175, 200, 50, 25); //neutral blocks
   rect(275, 650, 50, 25); //
   rect(275, 625, 50, 25); //
   rect(275, 475, 50, 25);  //
@@ -30,7 +30,7 @@ void setup() {
 
 
   fill(255, 0, 0);
-  rect(275, 300, 50, 25);//
+  rect(275, 300, 50, 25);//red blocks
   rect(275, 600, 50, 25); //
   rect(175, 350, 50, 25); //
   rect(175, 600, 50, 25); //
@@ -61,7 +61,7 @@ void setup() {
   fill(0, 255, 0);
 
 
-  rect(275, 275, 50, 25); //
+  rect(275, 275, 50, 25); //green blocks
   rect(275, 500, 50, 25); //
   rect(275, 375, 50, 25); //
   rect(275, 575, 50, 25); //
@@ -85,7 +85,7 @@ void setup() {
 
   stroke(1);
   fill(110);
-  text("This is my take on 2d truth or dare jenga", 450, 150);
+  text("This is my take on 2d truth or dare jenga", 450, 150); // text for the instructions
   text("Each time you the letter on a block it will ", 450, 175);
   text("dissapear. Each time that you click on a ", 450, 200);
   text("green block you must take a truth from the ", 450, 225);
@@ -106,6 +106,16 @@ void setup() {
   text("to make someone win", 450, 600);
   textSize(25);
   text("Instructions", 450, 100);
+  text("if the box is", 25, 225);
+  fill(255, 0, 0);
+  text("red = closer", 25, 250);
+  text("to falling", 25, 275);
+  fill(13, 1, 75);
+  text("blue = not", 25, 300);
+  text("going to fall", 25, 325);
+   fill(0);
+  rect(50, 350, 100, 50);
+  
 }
 
 void draw()
@@ -117,18 +127,61 @@ void draw()
   fill(255);
   text(clicks + "clicks", 725, 25);
 
-  if (clicks > random(20, 50))
+ 
+
+ 
+  if (clicks > random(3, 7)) // code for the rect on the left showing hot or cold
   {
-    rect(0, 0, 800, 800);
-    textSize(100);
-    fill(0);
-    text("Game over", 250, 300);
+    fill(34, 20, 146);
+    rect(50, 350, 100, 50);
   }
-}
+  if(clicks > random(8, 12)){
+    fill(34, 72, 128);
+    rect(50, 350, 100, 50);
+  }
+  if(clicks > random(13, 16)){
+  fill(233, 149, 0);
+  rect(50, 350, 100, 50);
+  }
+
+ if(clicks > random(17, 21)){
+   fill(246, 89, 0);
+   rect(50, 350, 100, 50);
+ }
+ if(clicks > random(22, 26)){
+   fill(245, 20);
+   rect(50, 350, 100, 50);
+ }
+ if(clicks > random (27, 30)){
+  fill(255, 0, 0);
+  rect(50, 350, 100, 50);
+ }
+ 
+   if (clicks > random(30, 50)) //the code for the game over screen
+  {
+    fill(255);
+    rect(0, 0, 800, 800);
+    textSize(50);
+    fill(0);
+    text("The tower has fallen.", 100, 350);
+    text("Game over.", 100, 450);
+    fill(255);
+    rect(50, 350, 100, 50);
+   clicks = 50;
+  }
+
+ 
+ }
+   
+   
+
+ 
 
 
-void mouseClicked() {
-  if (mouseX > 175 && mouseX < 225 && mouseY > 200 && mouseY < 225) {
+
+
+void mouseClicked() { //all the code to make the rects dissapearing
+  if (mouseX > 175 && mouseX < 225 && mouseY > 200 && mouseY < 225) { 
     fill(255);
     noStroke();
     rect(175, 200, 50, 25);
